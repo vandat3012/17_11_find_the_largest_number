@@ -7,14 +7,15 @@
 <body>
 <script>
     let array = [-2,4,6,8,5];
-    let index = -1;
-    let numberMax = 0;
+    let index = 0;
+    let numberMax = array[0];
     for (let i=0 ; i<array.length ; i++) {
-        if(numberMax>array[i]) {
+        if(numberMax<array[i]) {
+            numberMax = array[i];
             index=i;
         }
     }
-        alert('the largest is ' + index)
+        alert('the largest is ' + numberMax + ' at ' + index)
 
 </script>
 </body>
